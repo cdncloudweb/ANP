@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ANP Consulting | The Global Partner</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#e1e0ff",
+                    "on-primary-fixed": "#001b3d",
+                    "inverse-surface": "#2e3132",
+                    "brand-navy": "#00234B",
+                    "on-secondary-fixed": "#001356",
+                    "secondary": "#1e4ae1",
+                    "on-secondary-container": "#fffbff",
+                    "on-tertiary-fixed": "#07006c",
+                    "background": "#f8f9fa",
+                    "on-tertiary-fixed-variant": "#2f2ebe",
+                    "on-primary-container": "#718bb9",
+                    "tertiary-container": "#0a0083",
+                    "surface-glass": "rgba(255, 255, 255, 0.7)",
+                    "on-error": "#ffffff",
+                    "surface": "#f8f9fa",
+                    "outline-variant": "#c4c6d0",
+                    "surface-tint": "#455f8a",
+                    "primary-fixed": "#d6e3ff",
+                    "tertiary": "#020043",
+                    "outline": "#74777f",
+                    "secondary-fixed": "#dde1ff",
+                    "executive-blue": "#0940D9",
+                    "surface-bright": "#f8f9fa",
+                    "secondary-fixed-dim": "#b8c3ff",
+                    "secondary-container": "#4166fb",
+                    "on-error-container": "#93000a",
+                    "accent-teal": "#00D6BD",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed-dim": "#c0c1ff",
+                    "on-primary": "#ffffff",
+                    "on-surface": "#191c1d",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-dim": "#d9dadb",
+                    "primary-fixed-dim": "#adc7f8",
+                    "surface-container": "#edeeef",
+                    "on-tertiary-container": "#787cff",
+                    "on-primary-fixed-variant": "#2c4771",
+                    "primary": "#000e24",
+                    "vibrant-purple": "#8B5CF6",
+                    "primary-container": "#00234b",
+                    "surface-container-low": "#f3f4f5",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-secondary": "#ffffff",
+                    "surface-variant": "#e1e3e4",
+                    "on-surface-variant": "#43474e",
+                    "inverse-primary": "#adc7f8",
+                    "on-background": "#191c1d",
+                    "surface-container-high": "#e7e8e9",
+                    "on-secondary-fixed-variant": "#0035be",
+                    "inverse-on-surface": "#f0f1f2",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "margin-tablet": "32px",
+                    "margin-mobile": "20px",
+                    "margin-desktop": "64px",
+                    "container-max": "1440px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "label-sm": ["Plus Jakarta Sans"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "headline-lg-mobile": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "label-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #0940D9, #8B5CF6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface-glass backdrop-blur-md border-b border-outline-variant/30 shadow-sm transition-all duration-300">
+<div class="max-w-container-max mx-auto px-margin-desktop flex items-center justify-between h-20">
+<div class="font-headline-md text-headline-md font-bold text-brand-navy">ANP Consulting</div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-label-md text-label-md text-executive-blue border-b-2 border-executive-blue pb-1" href="#">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-executive-blue transition-all duration-300" href="#">Industries</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-executive-blue transition-all duration-300" href="#">Resources</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-executive-blue transition-all duration-300" href="#">Case Studies</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-executive-blue transition-all duration-300" href="#">Careers</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-executive-blue hover:opacity-90 text-white px-6 py-2.5 rounded-lg font-label-md transition-all scale-95 duration-200">
+                    Book a Consultation
+                </button>
+<button class="md:hidden text-brand-navy">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section: Global Reach -->
+<section class="relative pt-32 pb-20 overflow-hidden min-h-[921px] flex items-center">
+<!-- Background Animation -->
+
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+<div>
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm mb-6">
+<span class="material-symbols-outlined text-[14px]">public</span>
+                    A World-Class Consulting Network
+                </span>
+<h1 class="font-display-lg text-display-lg text-brand-navy mb-6 tracking-tight">
+                    Your Global Partner for <span class="text-gradient">Strategic Excellence</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl">
+                    Bridging continents with precision analytics and expert management consulting. Join the Global EPM Community and transform your operational vision into worldwide impact.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-brand-navy text-white px-8 py-4 rounded-xl font-headline-md flex items-center gap-3 transition-transform hover:scale-105 active:scale-95">
+                        Join the Community
+                        <span class="material-symbols-outlined">group_add</span>
+</button>
+<button class="bg-white border border-outline-variant text-brand-navy px-8 py-4 rounded-xl font-headline-md hover:bg-surface-container-low transition-colors">
+                        Explore Hubs
+                    </button>
+</div>
+<!-- Community Stats -->
+<div class="mt-12 flex items-center gap-8 border-t border-outline-variant/30 pt-8">
+<div>
+<div class="font-headline-lg text-headline-lg text-executive-blue">1500+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Community Members</div>
+</div>
+<div class="w-px h-10 bg-outline-variant"></div>
+<div>
+<div class="font-headline-lg text-headline-lg text-accent-teal">45+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Global Hubs</div>
+</div>
+<div class="w-px h-10 bg-outline-variant"></div>
+<div>
+<div class="font-headline-lg text-headline-lg text-vibrant-purple">120k</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Project Hours</div>
+</div>
+</div>
+</div>
+<div class="relative h-[600px] rounded-3xl overflow-hidden shadow-2xl border border-white/20">
+<!-- Interactive World Map Placeholder -->
+<div class="absolute inset-0 bg-brand-navy/90 flex flex-col items-center justify-center overflow-hidden" data-location="Global Map View" style="">
+<img class="w-full h-full object-cover opacity-60" data-alt="A highly detailed, stylized 3D world map rendered in a high-end corporate style. The continents are dark navy blue with glowing neon lines representing data flow and consulting hubs in cyan and magenta. The aesthetic is clean, professional, and sophisticated, mirroring a premium consulting firm dashboard. Soft atmospheric lighting and tiny glowing dots mark major cities like London, New York, Singapore, and Dubai." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZYT4kbp-U2vc0Znurqi6waz7la-vVrevCPX7X9ENuExNwHqiRb85MysP1W7dohIgao3_B7ZTr5JhZzXYxCtqHKQD_qphSzCU9rzGOg8qMISN8UE9Ji8wYZwgTtVWcf5gAQjIRk8n4-DDLaR_o5OwYrg3oWynnrqIqJ6u0gt3JS1ndvp4mGc6xoOrORUQjsdGDxbaPb7B25e7bWqNQqGd9-7NrCx-Ptpf_vEGii7Qo39ntELA_DVCixCX6LgTLlfP75vAS4VhMbs8"/>
+<!-- Hub Markers (Absolute positioning for visual interest) -->
+<div class="absolute top-1/4 left-1/4 group cursor-pointer">
+<div class="w-4 h-4 bg-accent-teal rounded-full animate-ping absolute"></div>
+<div class="w-4 h-4 bg-accent-teal rounded-full relative shadow-[0_0_15px_#00D6BD]"></div>
+<div class="absolute bottom-6 left-1/2 -translate-x-1/2 glass-card px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap text-brand-navy font-label-sm">New York Hub</div>
+</div>
+<div class="absolute top-1/3 right-1/4 group cursor-pointer">
+<div class="w-4 h-4 bg-executive-blue rounded-full animate-ping absolute"></div>
+<div class="w-4 h-4 bg-executive-blue rounded-full relative shadow-[0_0_15px_#0940D9]"></div>
+<div class="absolute bottom-6 left-1/2 -translate-x-1/2 glass-card px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap text-brand-navy font-label-sm">London HQ</div>
+</div>
+<div class="absolute bottom-1/3 right-1/3 group cursor-pointer">
+<div class="w-4 h-4 bg-vibrant-purple rounded-full animate-ping absolute"></div>
+<div class="w-4 h-4 bg-vibrant-purple rounded-full relative shadow-[0_0_15px_#8B5CF6]"></div>
+<div class="absolute bottom-6 left-1/2 -translate-x-1/2 glass-card px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap text-brand-navy font-label-sm">Dubai Office</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Global Community & Culture Section -->
+<section class="py-24 bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-16 max-w-3xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-brand-navy mb-4">A Culture of Diversity and Innovation</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    We believe global reach is nothing without local expertise. Our community spans 50+ countries, bringing together the world's finest minds in financial forecasting and operational excellence.
+                </p>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter h-auto lg:h-[700px]">
+<!-- Main Image - Diverse Team -->
+<div class="md:col-span-8 relative rounded-2xl overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A professional photograph of a diverse team of consultants collaborating in a modern, sunlit glass office. They are looking at a digital tablet showing complex data visualizations. The lighting is warm and natural, suggesting a collaborative and positive corporate environment. The background shows a blurry cityscape, and the overall color palette is professional with soft blues and neutral tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkbwY6NY6ot0N55CeE4J5nBaUe47D9ASNBfAY0S49tKu4VwGbhMUzMfFnnTZ2q3Vung6ieHcj9igtoVwP2_dWZpgagZDOhSIzmeZnRDI5zWdMiqz_ks_yhvoi9xyXMKLU6KumFPFRIOO4a_N0xuC3Sycdb5bGYFoxI8ipbwqQULI_XSg0Ixckq8D8Ti5dPz8D3nlu-kq-DuzDKrgq78QkhoUzkVy0KvDEoB_EpevPUIEQ-wlrmW-9E15cMlK7Y52TWqAbjFQVpFtQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-transparent to-transparent flex flex-col justify-end p-8">
+<h3 class="text-white font-headline-md text-headline-md mb-2">Our Collaborative Power</h3>
+<p class="text-white/80 font-body-md max-w-lg">Diverse perspectives fuel our strategic breakthroughs, ensuring global solutions are grounded in cultural nuance.</p>
+</div>
+</div>
+<!-- Secondary Visual - Tech Integration -->
+<div class="md:col-span-4 relative rounded-2xl overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A high-tech digital abstract image representing cloud computing and global data synchronization. Glowing fiber optic lines and data particles weave through a minimalist architectural space. The color scheme is a premium mix of executive blue and vibrant purple, reflecting high-end technological sophistication. The mood is fast-paced, kinetic, and forward-thinking." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtycR5S_oNukOlFOaDKAuvrjHn_C-5ei5DNQDxJB0-OdvxrnSBC2olBt5WTPlbgIHsVNGyxtXAvRlK7W3J6c07R7GBalpqO0f0js3Bb9SupurJHQAwlYrpVtyDKC5kXe2KBS6RPkj4Dxvhyhh5zM2qHMmC9kO5vBXxuc92sVSHw6Tk6yexyk0gqVbXI3BhKR3IpzL7lzrNFr7xNrGROOxnpA9FuQYMeI4zo47BNBLsRU0YGl0B6uD-PYkKdG3JbjOzANW5eNgjDwk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-executive-blue/80 via-transparent to-transparent flex flex-col justify-end p-8">
+<h3 class="text-white font-headline-md text-headline-md mb-2">Advanced Analytics</h3>
+<p class="text-white/80 font-body-md">Precision-engineered tools for a borderless economy.</p>
+</div>
+</div>
+<!-- Horizontal Stat Card -->
+<div class="md:col-span-6 glass-card p-8 rounded-2xl flex items-center justify-between">
+<div>
+<h4 class="font-headline-md text-headline-md text-brand-navy mb-2">98% Retention</h4>
+<p class="font-body-md text-on-surface-variant">Our community members stay for the impact.</p>
+</div>
+<span class="material-symbols-outlined text-accent-teal text-5xl">trending_up</span>
+</div>
+<!-- Another Feature Card -->
+<div class="md:col-span-6 bg-brand-navy text-white p-8 rounded-2xl flex items-center gap-6">
+<div class="bg-executive-blue/20 p-4 rounded-xl">
+<span class="material-symbols-outlined text-white text-4xl">travel_explore</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-1">Global Mobility</h4>
+<p class="font-body-md text-white/70">Seamless collaboration across 12 time zones.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Grid -->
+<section class="py-24 bg-white">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<h2 class="font-headline-lg text-headline-lg text-brand-navy mb-4">Our Core Capabilities</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Comprehensive solutions tailored for the global enterprise.</p>
+</div>
+<button class="flex items-center gap-2 font-label-md text-executive-blue group">
+                    View All Services
+                    <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Service Card 1 -->
+<div class="group p-8 rounded-2xl border border-outline-variant/30 hover:border-executive-blue transition-all duration-300 hover:shadow-xl hover:-translate-y-2 bg-background">
+<span class="material-symbols-outlined text-executive-blue text-4xl mb-6">insights</span>
+<h3 class="font-headline-md text-headline-md text-brand-navy mb-4">Strategic Planning</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Long-term visioning for multinational corporations looking to dominate emerging markets.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-2 text-label-md"><span class="material-symbols-outlined text-accent-teal text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> Market Entry Analysis</li>
+<li class="flex items-center gap-2 text-label-md"><span class="material-symbols-outlined text-accent-teal text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> M&amp;A Integration</li>
+</ul>
+</div>
+<!-- Service Card 2 -->
+<div class="group p-8 rounded-2xl border border-outline-variant/30 hover:border-executive-blue transition-all duration-300 hover:shadow-xl hover:-translate-y-2 bg-background">
+<span class="material-symbols-outlined text-executive-blue text-4xl mb-6">query_stats</span>
+<h3 class="font-headline-md text-headline-md text-brand-navy mb-4">Financial Forecasting</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Real-time predictive models that navigate currency fluctuations and global volatility.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-2 text-label-md"><span class="material-symbols-outlined text-accent-teal text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> EPM Implementation</li>
+<li class="flex items-center gap-2 text-label-md"><span class="material-symbols-outlined text-accent-teal text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> Risk Mitigation</li>
+</ul>
+</div>
+<!-- Service Card 3 -->
+<div class="group p-8 rounded-2xl border border-outline-variant/30 hover:border-executive-blue transition-all duration-300 hover:shadow-xl hover:-translate-y-2 bg-background">
+<span class="material-symbols-outlined text-executive-blue text-4xl mb-6">precision_manufacturing</span>
+<h3 class="font-headline-md text-headline-md text-brand-navy mb-4">Operational Excellence</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Lean methodologies applied to global supply chains and digital manufacturing systems.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-2 text-label-md"><span class="material-symbols-outlined text-accent-teal text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> Supply Chain Resiliency</li>
+<li class="flex items-center gap-2 text-label-md"><span class="material-symbols-outlined text-accent-teal text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> Digital Transformation</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-brand-navy text-on-primary py-16">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<!-- Brand Column -->
+<div class="space-y-6">
+<div class="font-headline-lg text-headline-lg font-bold text-white">ANP Consulting</div>
+<p class="font-body-md text-on-primary-container/80 max-w-xs">
+                    Elevating enterprises worldwide through precision consulting and community-driven innovation.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">alternate_email</span>
+</a>
+</div>
+</div>
+<!-- Links Column 1: Services -->
+<div>
+<h4 class="font-label-md text-label-md text-accent-teal uppercase tracking-widest mb-6">Services</h4>
+<ul class="space-y-4 font-body-md text-on-primary-container/80">
+<li><a class="hover:text-accent-teal transition-colors" href="#">Strategic Planning</a></li>
+<li><a class="hover:text-accent-teal transition-colors" href="#">Financial Forecasting</a></li>
+<li><a class="hover:text-accent-teal transition-colors" href="#">Operational Excellence</a></li>
+</ul>
+</div>
+<!-- Links Column 2: Industries -->
+<div>
+<h4 class="font-label-md text-label-md text-accent-teal uppercase tracking-widest mb-6">Industries</h4>
+<ul class="space-y-4 font-body-md text-on-primary-container/80">
+<li><a class="hover:text-accent-teal transition-colors" href="#">Manufacturing</a></li>
+<li><a class="hover:text-accent-teal transition-colors" href="#">Financial Services</a></li>
+<li><a class="hover:text-accent-teal transition-colors" href="#">Technology</a></li>
+</ul>
+</div>
+<!-- Links Column 3: Company -->
+<div>
+<h4 class="font-label-md text-label-md text-accent-teal uppercase tracking-widest mb-6">Company</h4>
+<ul class="space-y-4 font-body-md text-on-primary-container/80">
+<li><a class="hover:text-accent-teal transition-colors" href="#">Our Story</a></li>
+<li><a class="hover:text-accent-teal transition-colors" href="#">Leadership</a></li>
+<li><a class="hover:text-accent-teal transition-colors" href="#">News</a></li>
+</ul>
+</div>
+</div>
+<!-- Bottom Footer -->
+<div class="max-w-container-max mx-auto px-margin-desktop mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between gap-6">
+<p class="font-body-md text-on-primary-container/60">© 2024 ANP Consulting. All rights reserved.</p>
+<div class="flex gap-8 font-body-md text-on-primary-container/60">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-white transition-colors" href="#">Cookie Policy</a>
+</div>
+</div>
+</footer>
+<!-- FAB for Consultation -->
+<div class="fixed bottom-8 right-8 z-40 md:hidden">
+<button class="w-14 h-14 bg-executive-blue text-white rounded-full shadow-lg flex items-center justify-center transition-transform active:scale-90">
+<span class="material-symbols-outlined">chat_bubble</span>
+</button>
+</div>
+<script>
+        // Simple Micro-interaction for scroll effects
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('py-4');
+                nav.classList.remove('py-0');
+            } else {
+                nav.classList.remove('py-4');
+                nav.classList.add('py-0');
+            }
+        });
+
+        // Hub pulse animation logic could be extended here
+    </script>
+</body></html>

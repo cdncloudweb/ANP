@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ANP Consulting | Anaplan Excellence</title>
+<meta content="Expert Anaplan consulting services for enterprise performance management, financial planning, and supply chain optimization." name="description"/>
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-primary-fixed": "#001b3d",
+                "surface-container-lowest": "#ffffff",
+                "surface-variant": "#e0e3e5",
+                "secondary-container": "#6063ee",
+                "on-primary-fixed-variant": "#2c4771",
+                "on-error": "#ffffff",
+                "background": "#f7f9fb",
+                "outline-variant": "#c4c6d0",
+                "error": "#ba1a1a",
+                "secondary-fixed": "#e1e0ff",
+                "on-secondary": "#ffffff",
+                "surface-container-highest": "#e0e3e5",
+                "outline": "#74777f",
+                "on-primary-container": "#718bb9",
+                "on-tertiary": "#ffffff",
+                "tertiary": "#190031",
+                "surface": "#f7f9fb",
+                "surface-container-low": "#f2f4f6",
+                "secondary-fixed-dim": "#c0c1ff",
+                "inverse-on-surface": "#eff1f3",
+                "surface-container": "#eceef0",
+                "on-primary": "#ffffff",
+                "surface-dim": "#d8dadc",
+                "on-surface": "#191c1e",
+                "inverse-surface": "#2d3133",
+                "tertiary-container": "#370063",
+                "tertiary-fixed-dim": "#ddb7ff",
+                "on-tertiary-fixed-variant": "#6900b3",
+                "surface-tint": "#455f8a",
+                "on-secondary-fixed-variant": "#2f2ebe",
+                "on-surface-variant": "#43474e",
+                "primary-fixed": "#d6e3ff",
+                "primary-fixed-dim": "#adc7f8",
+                "surface-bright": "#f7f9fb",
+                "surface-container-high": "#e6e8ea",
+                "inverse-primary": "#adc7f8",
+                "error-container": "#ffdad6",
+                "primary-container": "#00234b",
+                "tertiary-fixed": "#f0dbff",
+                "on-secondary-container": "#fffbff",
+                "on-error-container": "#93000a",
+                "on-tertiary-fixed": "#2c0051",
+                "primary": "#000e24",
+                "on-tertiary-container": "#b263ff",
+                "secondary": "#4648d4",
+                "on-background": "#191c1e",
+                "on-secondary-fixed": "#07006c"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "md": "24px",
+                "xl": "80px",
+                "lg": "48px",
+                "base": "4px",
+                "xs": "8px",
+                "sm": "16px",
+                "container-max": "1280px",
+                "gutter": "32px"
+            },
+            "fontFamily": {
+                "headline-md": ["Plus Jakarta Sans"],
+                "body-md": ["Inter"],
+                "label-md": ["Inter"],
+                "headline-lg-mobile": ["Plus Jakarta Sans"],
+                "label-caps": ["Inter"],
+                "display-xl": ["Plus Jakarta Sans"],
+                "headline-sm": ["Plus Jakarta Sans"],
+                "body-lg": ["Inter"],
+                "headline-lg": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                "headline-md": ["30px", {"lineHeight": "38px", "fontWeight": "600"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "display-xl": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.5);
+        }
+        .ai-gradient-border {
+            border-top: 2px solid;
+            border-image: linear-gradient(to right, #6366F1, #00234B) 1;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-mesh {
+            background-color: #f7f9fb;
+            background-image: radial-gradient(at 0% 0%, hsla(210,100%,93%,1) 0, transparent 50%), 
+                              radial-gradient(at 100% 0%, hsla(220,100%,95%,1) 0, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar (Shared Component) -->
+<header class="bg-white/70 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant/30 shadow-sm">
+<nav class="flex justify-between items-center w-full px-md lg:px-xl py-sm max-w-container-max mx-auto">
+<div class="text-headline-sm font-headline-sm font-bold text-primary">
+                ANP Consulting
+            </div>
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-secondary font-bold border-b-2 border-secondary pb-1 text-label-md font-label-md" href="#">Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-md font-label-md" href="#">Industries</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-md font-label-md" href="#">Resources</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-md font-label-md" href="#">Case Studies</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-md font-label-md" href="#">Careers</a>
+</div>
+<div class="flex items-center gap-sm">
+<button class="material-symbols-outlined p-base rounded-full hover:bg-surface-container-low transition-all">search</button>
+<button class="bg-primary text-on-primary px-sm py-xs rounded-lg font-label-md transition-all active:scale-95 hover:opacity-90">
+                    Book a Consultation
+                </button>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section: Anaplan Transformation -->
+<section class="hero-mesh relative overflow-hidden py-xl lg:py-32">
+<div class="max-w-container-max mx-auto px-md lg:px-xl grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7 z-10">
+<div class="inline-flex items-center gap-xs bg-secondary-fixed text-on-secondary-fixed px-sm py-base rounded-full mb-md">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="text-label-caps font-label-caps">Tier-1 Anaplan Implementation Partner</span>
+</div>
+<h1 class="text-headline-lg-mobile md:text-display-xl font-display-xl text-primary mb-sm">
+                        Experience <span class="text-secondary">Integrated</span> Planning
+                    </h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mb-lg">
+                        Unlock operational excellence with tailored, AI-enabled enterprise software solutions. We bridge the gap from data to value through expert Anaplan model architecture.
+                    </p>
+<div class="flex flex-wrap gap-sm">
+<button class="bg-primary-container text-white px-lg py-sm rounded-lg font-label-md flex items-center gap-xs hover:shadow-lg transition-all">
+                            Start Your Anaplan Journey
+                            <span class="material-symbols-outlined">trending_flat</span>
+</button>
+<button class="border border-outline px-lg py-sm rounded-lg font-label-md text-primary hover:bg-surface-container transition-all">
+                            View Case Studies
+                        </button>
+</div>
+<div class="mt-xl flex items-center gap-lg grayscale opacity-60">
+<span class="text-label-caps font-label-caps uppercase tracking-widest text-outline">Trusted by industry leaders</span>
+<!-- Logo Placeholders could go here -->
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="glass-card p-sm rounded-xl shadow-xl transform rotate-1 hover:rotate-0 transition-transform duration-500">
+<img class="rounded-lg shadow-inner w-full" data-alt="A clean, high-resolution interface of an Anaplan dashboard showing intricate financial planning data, 3D bar charts, and colorful heatmaps for global supply chain visibility. The UI is minimalist with a white background and deep blue accents, reflecting a sophisticated corporate consulting aesthetic. The lighting is crisp and professional, highlighting the precision of the data visualization." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT3p3xJbQdC-FCE9lhcVmuLDko7Aj29aHD3qjBr8KKqv7HB_OeKoXW6_DCRKuYCfeKUkEdLIFACBMJmbxlspPaP3br4HCQFE4e8HtEGtMcdQFq4Zp7dehW-vxrgfo4wJntBsmrCXh32ImXIXx3PktZhm-FRbdECg6SyVQG6A4xphpND23ZVZJZmjRbpKQ-44hYuvVCKovv-BGz4qewBj-FoPKAagFy3UIUsbMGjk8wRPyDRxUYrv0AO7aKT3ffh_wwayfKXWJn7CY"/>
+</div>
+<div class="absolute -bottom-lg -left-lg glass-card p-md rounded-xl shadow-lg hidden md:block max-w-[200px]">
+<div class="flex items-center gap-xs mb-xs text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="text-label-md font-label-md">Real-time Sync</span>
+</div>
+<p class="text-label-caps font-label-caps text-on-surface-variant">Models update in &lt;1s across all global instances.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Solutions: Detailed Breakdown -->
+<section class="py-xl bg-white">
+<div class="max-w-container-max mx-auto px-md lg:px-xl">
+<div class="text-center max-w-3xl mx-auto mb-xl">
+<h2 class="text-headline-lg font-headline-lg text-primary mb-sm">Bespoke Planning Solutions</h2>
+<p class="text-body-md font-body-md text-on-surface-variant">We specialize in implementing best-in-class Enterprise Performance Management systems, helping businesses streamline operations and enhance strategic goals.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Financial Planning -->
+<div class="group p-md rounded-xl border border-outline-variant/30 hover:shadow-xl transition-all duration-300 flex flex-col h-full bg-surface-container-lowest">
+<div class="w-12 h-12 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]">account_balance_wallet</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary mb-xs">Finance</h3>
+<p class="text-body-md font-body-md text-on-surface-variant flex-grow mb-md">
+                            Automate budgeting, forecasting, and consolidated reporting for agile decision-making.
+                        </p>
+<ul class="space-y-xs mb-lg">
+<li class="flex items-center gap-xs text-label-md font-label-md text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> 
+                                Rolling Forecasts
+                            </li>
+<li class="flex items-center gap-xs text-label-md font-label-md text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> 
+                                Cash Flow Analysis
+                            </li>
+</ul>
+<button class="text-secondary font-label-md flex items-center gap-base group-hover:gap-sm transition-all">
+                            Learn more <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Supply Chain -->
+<div class="group p-md rounded-xl border border-outline-variant/30 hover:shadow-xl transition-all duration-300 flex flex-col h-full bg-surface-container-lowest">
+<div class="w-12 h-12 rounded-lg bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed-variant mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]">inventory_2</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary mb-xs">Supply Chain</h3>
+<p class="text-body-md font-body-md text-on-surface-variant flex-grow mb-md">
+                            Optimize inventory levels and demand planning with end-to-end network visibility.
+                        </p>
+<ul class="space-y-xs mb-lg">
+<li class="flex items-center gap-xs text-label-md font-label-md text-on-surface">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant text-[18px]">check_circle</span> 
+                                S&amp;OP Integration
+                            </li>
+<li class="flex items-center gap-xs text-label-md font-label-md text-on-surface">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant text-[18px]">check_circle</span> 
+                                Network Design
+                            </li>
+</ul>
+<button class="text-on-tertiary-fixed-variant font-label-md flex items-center gap-base group-hover:gap-sm transition-all">
+                            Learn more <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Workforce Planning -->
+<div class="group p-md rounded-xl border border-outline-variant/30 hover:shadow-xl transition-all duration-300 flex flex-col h-full bg-surface-container-lowest">
+<div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center text-on-primary-fixed-variant mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]">groups</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary mb-xs">HR &amp; Workforce</h3>
+<p class="text-body-md font-body-md text-on-surface-variant flex-grow mb-md">
+                            Align talent strategy with business goals through advanced capacity planning.
+                        </p>
+<ul class="space-y-xs mb-lg">
+<li class="flex items-center gap-xs text-label-md font-label-md text-on-surface">
+<span class="material-symbols-outlined text-on-primary-fixed-variant text-[18px]">check_circle</span> 
+                                Headcount Budgeting
+                            </li>
+<li class="flex items-center gap-xs text-label-md font-label-md text-on-surface">
+<span class="material-symbols-outlined text-on-primary-fixed-variant text-[18px]">check_circle</span> 
+                                Skill Gap Analysis
+                            </li>
+</ul>
+<button class="text-on-primary-fixed-variant font-label-md flex items-center gap-base group-hover:gap-sm transition-all">
+                            Learn more <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Sales Performance -->
+<div class="group p-md rounded-xl border border-outline-variant/30 hover:shadow-xl transition-all duration-300 flex flex-col h-full bg-surface-container-lowest">
+<div class="w-12 h-12 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]">trending_up</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary mb-xs">Sales</h3>
+<p class="text-body-md font-body-md text-on-surface-variant flex-grow mb-md">
+                            Maximize revenue through optimized quota setting and territory management.
+                        </p>
+<ul class="space-y-xs mb-lg">
+<li class="flex items-center gap-xs text-label-md font-label-md text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> 
+                                Quota &amp; Territory
+                            </li>
+<li class="flex items-center gap-xs text-label-md font-label-md text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> 
+                                Incentive Comp
+                            </li>
+</ul>
+<button class="text-secondary font-label-md flex items-center gap-base group-hover:gap-sm transition-all">
+                            Learn more <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Methodology: The Design-Build-Implement approach -->
+<section class="py-xl bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-md lg:px-xl">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+<div class="order-2 lg:order-1">
+<div class="space-y-md">
+<div class="flex gap-md">
+<div class="flex-shrink-0 text-headline-sm font-headline-sm text-outline-variant">01</div>
+<div>
+<h4 class="text-headline-sm font-headline-sm text-primary mb-xs">Diagnostic &amp; Discovery</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">We map your current processes to identify bottlenecks and planning gaps using our proprietary assessment framework.</p>
+</div>
+</div>
+<div class="flex gap-md border-t border-outline-variant/30 pt-md">
+<div class="flex-shrink-0 text-headline-sm font-headline-sm text-outline-variant">02</div>
+<div>
+<h4 class="text-headline-sm font-headline-sm text-primary mb-xs">Model Architecture</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">Our architects design robust, scalable Anaplan modules following the "DISCO" methodology for peak performance.</p>
+</div>
+</div>
+<div class="flex gap-md border-t border-outline-variant/30 pt-md">
+<div class="flex-shrink-0 text-headline-sm font-headline-sm text-outline-variant">03</div>
+<div>
+<h4 class="text-headline-sm font-headline-sm text-primary mb-xs">Agile Implementation</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">Sprints-based delivery ensures immediate value, with continuous stakeholder feedback and model refinement.</p>
+</div>
+</div>
+<div class="flex gap-md border-t border-outline-variant/30 pt-md">
+<div class="flex-shrink-0 text-headline-sm font-headline-sm text-outline-variant">04</div>
+<div>
+<h4 class="text-headline-sm font-headline-sm text-primary mb-xs">Enablement &amp; Evolution</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">Training your team to be self-sufficient while providing managed services for long-term strategic growth.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<h2 class="text-headline-lg font-headline-lg text-primary mb-md">Our Unique <span class="text-secondary">Methodology</span></h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-lg">Precision consulting meets rapid deployment. We don't just build models; we transform how your organization thinks about data.</p>
+<div class="relative rounded-2xl overflow-hidden aspect-video shadow-2xl group">
+<img class="w-full h-full object-cover" data-alt="A professional team of consultants and data scientists in a bright, modern glass-walled conference room. They are collaborating over large touchscreens displaying complex data flow diagrams and Anaplan workspace structures. The setting is high-end, with architectural lighting and a sense of focused innovation. The color palette features whites, cool greys, and deep blues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADCNIKPsrf2G2ZpLqP3pJCS5cpwelpnEdc3BRjS6thhDtJGuRWxOF-MIFWsjxBihuXO8xHKMAlZbZaZKsegrtuNbjW5GDNdjFd7T3HgCZghGKw7pdbgzzg9i0MdNM3r9EZs8keT7EukrwBX0qay1CJtkYSud_cvQdHUDdt6GOZNjtalSp1mjCXzbbIzl-K4khiEUXb5yrpxmHashzZf0ICOrbTKZUBqLjoQ5cOfmwXGCDQLT8FCh5xKHDtGI9_qn5TVMjD5ePQqGo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-lg">
+<div class="text-white">
+<p class="text-label-caps font-label-caps mb-xs opacity-80 uppercase">Watch our process</p>
+<div class="flex items-center gap-sm">
+<button class="w-12 h-12 rounded-full bg-white text-primary flex items-center justify-center hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">play_arrow</span>
+</button>
+<span class="text-headline-sm font-headline-sm">The ANP Implementation Guide</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Case Study Highlight: ROI Focus -->
+<section class="py-xl">
+<div class="max-w-container-max mx-auto px-md lg:px-xl">
+<div class="bg-primary text-white rounded-3xl overflow-hidden grid grid-cols-1 lg:grid-cols-2">
+<div class="p-lg md:p-xl flex flex-col justify-center">
+<div class="text-secondary-fixed text-label-caps font-label-caps mb-sm uppercase tracking-widest">Global Manufacturing Success</div>
+<h3 class="text-headline-lg font-headline-lg mb-md">30% Efficiency Gain in Annual Planning</h3>
+<p class="text-body-lg font-body-lg text-surface-variant/80 mb-xl">
+                            "ANP Consulting revolutionized how we handle global supply chain disruptions. Their Anaplan architecture allowed us to pivot from monthly to daily planning cycles during peak volatility."
+                        </p>
+<div class="flex items-center gap-md mb-lg">
+<div class="flex-shrink-0 w-16 h-16 rounded-full border-2 border-secondary-fixed overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a female executive in her 40s with a confident and warm expression. She is wearing a smart navy blazer in a modern office setting. The photo is lit with high-key corporate lighting, featuring soft shadows and a pristine white background that reflects professional reliability and leadership." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs4b__fvlgMEuDfYdbQGM12EaQs97kPf6c18HY3N4hCOVcN8eNaXq_Moauc6UOYGYbecC3XZAHP8jAKGwKhPNn8af1toMa592eugfVuOcB4y_kCzavFAfRFiaJWMmVz3ECMDurJ9Htmv0p088kB-h0I-IKIdxxdxwBQHFWD-57VK-2ntebu6divRIMDj-_C2A9WQfTU89ZaJOoFfd5ULRX0Vli8r3OFfjPlg4mM2YvJwQveX6G7XFfsWqfEWSVGdpUsd0ahzCMGA8"/>
+</div>
+<div>
+<div class="text-headline-sm font-headline-sm">Sarah Jenkins</div>
+<div class="text-label-md font-label-md text-surface-variant/70">VP of Strategic Planning, Global Logix</div>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-md border-t border-white/10 pt-lg">
+<div>
+<div class="text-headline-sm font-headline-sm text-secondary-fixed">85%</div>
+<div class="text-label-caps font-label-caps opacity-60 uppercase">Error Reduction</div>
+</div>
+<div>
+<div class="text-headline-sm font-headline-sm text-secondary-fixed">12wks</div>
+<div class="text-label-caps font-label-caps opacity-60 uppercase">Implementation</div>
+</div>
+<div>
+<div class="text-headline-sm font-headline-sm text-secondary-fixed">4.2x</div>
+<div class="text-label-caps font-label-caps opacity-60 uppercase">Target ROI</div>
+</div>
+</div>
+</div>
+<div class="relative min-h-[400px]">
+<img class="w-full h-full object-cover" data-alt="A high-contrast, artistic overhead shot of a modern manufacturing plant with automated robotic arms and clean, organized production lines. The lighting is dramatic, with cool blue industrial tones and bright white focus lights, symbolizing the intersection of physical operations and digital intelligence. The style is crisp, high-end, and architectural." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS77k_qobN3pnHbJg06jNMczvKJqtMOGrY_H2ZvqQHBDFyRcl2g0wup9GT-EYkR-lFvb3vKuwX6zSCvewqHrZW-DqoBDuvx8Fb-9TeaDx5wj78ExadYJ_eRl4TtzJaMJPrxT1IHGQcGVDWNvksh04zQRywS6zBRkKYUrGIAxWevVtPmLrDTLgS2oUbmHp_nSqZg0UWc2svfUFXS72SMOt7FvchFbr4fFLQe_leJ2fXXSQ6NXvdJNaj_OjxyyCqpebFkj3qe0Vx488"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[2px]"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-xl">
+<div class="max-w-container-max mx-auto px-md lg:px-xl text-center">
+<div class="ai-gradient-border glass-card rounded-2xl p-xl shadow-2xl relative overflow-hidden">
+<!-- Subtle background decoration -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-primary-container/5 rounded-full blur-3xl -ml-32 -mb-32"></div>
+<h2 class="text-headline-lg font-headline-lg text-primary mb-md relative z-10">Ready to Amplify Your Business Intelligence?</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mx-auto mb-lg relative z-10">
+                        Join 200+ enterprises who have transformed their planning processes with ANP Consulting. Let's build your future, today.
+                    </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-md relative z-10">
+<button class="bg-secondary text-white px-xl py-sm rounded-lg font-label-md text-[18px] hover:shadow-xl hover:bg-secondary-container transition-all flex items-center gap-xs">
+                            Start Your Anaplan Journey
+                            <span class="material-symbols-outlined">rocket_launch</span>
+</button>
+<button class="text-primary font-label-md flex items-center gap-xs hover:underline underline-offset-4 decoration-2">
+                            Speak with an Architect
+                            <span class="material-symbols-outlined">call</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-primary dark:bg-primary-container pt-xl pb-md">
+<div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-gutter px-md lg:px-xl max-w-container-max mx-auto">
+<div class="md:col-span-2">
+<div class="text-headline-sm font-headline-sm font-black text-on-primary mb-md">ANP Consulting</div>
+<p class="text-surface-variant/80 text-body-md font-body-md max-w-xs mb-lg">
+                    Empowering enterprise excellence through AI-driven EPM. Specialized in Anaplan, Pigment, and Oracle EPM ecosystems.
+                </p>
+<div class="flex gap-sm">
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-on-primary hover:bg-white/10 transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+</div>
+</div>
+<div class="space-y-sm">
+<div class="text-label-caps font-label-caps text-on-primary mb-md opacity-60 uppercase">Expertise</div>
+<ul class="space-y-xs">
+<li><a class="text-surface-variant/80 hover:text-secondary-fixed-dim transition-colors text-body-md font-body-md" href="#">Anaplan</a></li>
+<li><a class="text-surface-variant/80 hover:text-secondary-fixed-dim transition-colors text-body-md font-body-md" href="#">Pigment</a></li>
+<li><a class="text-surface-variant/80 hover:text-secondary-fixed-dim transition-colors text-body-md font-body-md" href="#">Oracle EPM</a></li>
+</ul>
+</div>
+<div class="space-y-sm">
+<div class="text-label-caps font-label-caps text-on-primary mb-md opacity-60 uppercase">Industries</div>
+<ul class="space-y-xs">
+<li><a class="text-surface-variant/80 hover:text-secondary-fixed-dim transition-colors text-body-md font-body-md" href="#">Manufacturing</a></li>
+<li><a class="text-surface-variant/80 hover:text-secondary-fixed-dim transition-colors text-body-md font-body-md" href="#">Retail</a></li>
+<li><a class="text-surface-variant/80 hover:text-secondary-fixed-dim transition-colors text-body-md font-body-md" href="#">Finance</a></li>
+</ul>
+</div>
+<div class="space-y-sm">
+<div class="text-label-caps font-label-caps text-on-primary mb-md opacity-60 uppercase">Company</div>
+<ul class="space-y-xs">
+<li><a class="text-surface-variant/80 hover:text-secondary-fixed-dim transition-colors text-body-md font-body-md" href="#">About Us</a></li>
+<li><a class="text-surface-variant/80 hover:text-secondary-fixed-dim transition-colors text-body-md font-body-md" href="#">Careers</a></li>
+<li><a class="text-surface-variant/80 hover:text-secondary-fixed-dim transition-colors text-body-md font-body-md" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="space-y-sm">
+<div class="text-label-caps font-label-caps text-on-primary mb-md opacity-60 uppercase">Legal</div>
+<ul class="space-y-xs">
+<li><a class="text-surface-variant/80 hover:text-secondary-fixed-dim transition-colors text-body-md font-body-md" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-md lg:px-xl border-t border-white/10 mt-xl pt-md">
+<p class="text-label-caps font-label-caps text-surface-variant/60 text-center">
+                © 2024 ANP Consulting. All Rights Reserved. Empowering enterprise excellence through AI-driven EPM.
+            </p>
+</div>
+</footer>
+<!-- Micro-interaction Scripts -->
+<script>
+        // Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'ease-out', 'opacity-0', 'translate-y-8');
+            observer.observe(section);
+        });
+
+        // Sticky Nav logic
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('py-2', 'shadow-md');
+                header.classList.remove('py-4', 'shadow-sm');
+            } else {
+                header.classList.add('py-4', 'shadow-sm');
+                header.classList.remove('py-2', 'shadow-md');
+            }
+        });
+    </script>
+</body></html>

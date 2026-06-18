@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Technical Mastery | ANP Consulting</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#e1e0ff",
+                        "on-primary-fixed": "#001b3d",
+                        "inverse-surface": "#2e3132",
+                        "brand-navy": "#00234B",
+                        "on-secondary-fixed": "#001356",
+                        "secondary": "#1e4ae1",
+                        "on-secondary-container": "#fffbff",
+                        "on-tertiary-fixed": "#07006c",
+                        "background": "#f8f9fa",
+                        "on-tertiary-fixed-variant": "#2f2ebe",
+                        "on-primary-container": "#718bb9",
+                        "tertiary-container": "#0a0083",
+                        "surface-glass": "rgba(255, 255, 255, 0.7)",
+                        "on-error": "#ffffff",
+                        "surface": "#f8f9fa",
+                        "outline-variant": "#c4c6d0",
+                        "surface-tint": "#455f8a",
+                        "primary-fixed": "#d6e3ff",
+                        "tertiary": "#020043",
+                        "outline": "#74777f",
+                        "secondary-fixed": "#dde1ff",
+                        "executive-blue": "#0940D9",
+                        "surface-bright": "#f8f9fa",
+                        "secondary-fixed-dim": "#b8c3ff",
+                        "secondary-container": "#4166fb",
+                        "on-error-container": "#93000a",
+                        "accent-teal": "#00D6BD",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#c0c1ff",
+                        "on-primary": "#ffffff",
+                        "on-surface": "#191c1d",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#d9dadb",
+                        "primary-fixed-dim": "#adc7f8",
+                        "surface-container": "#edeeef",
+                        "on-tertiary-container": "#787cff",
+                        "on-primary-fixed-variant": "#2c4771",
+                        "primary": "#000e24",
+                        "vibrant-purple": "#8B5CF6",
+                        "primary-container": "#00234b",
+                        "surface-container-low": "#f3f4f5",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#e1e3e4",
+                        "on-surface-variant": "#43474e",
+                        "inverse-primary": "#adc7f8",
+                        "on-background": "#191c1d",
+                        "surface-container-high": "#e7e8e9",
+                        "on-secondary-fixed-variant": "#0035be",
+                        "inverse-on-surface": "#f0f1f2",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "margin-tablet": "32px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "container-max": "1440px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(225, 227, 228, 0.5);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(9, 64, 217, 0.05), transparent),
+                        radial-gradient(circle at bottom left, rgba(139, 92, 246, 0.05), transparent);
+        }
+        .kinetic-border {
+            position: relative;
+            overflow: hidden;
+        }
+        .kinetic-border::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, #0940D9, #8B5CF6);
+            transform: translateX(-100%);
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .kinetic-border:hover::after {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-surface-glass backdrop-blur-md border-b border-outline-variant/30 shadow-sm">
+<div class="max-w-container-max mx-auto px-margin-desktop flex items-center justify-between h-20">
+<div class="flex items-center gap-12">
+<span class="font-headline-md text-headline-md font-bold text-brand-navy">ANP Consulting</span>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-executive-blue transition-all duration-300" href="#">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-executive-blue transition-all duration-300" href="#">Industries</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-executive-blue transition-all duration-300" href="#">Resources</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-executive-blue transition-all duration-300" href="#">Case Studies</a>
+<a class="font-label-md text-label-md text-executive-blue border-b-2 border-executive-blue pb-1" href="#">Our Story</a>
+</div>
+</div>
+<button class="hidden md:block bg-executive-blue hover:bg-brand-navy text-white font-label-md text-label-md px-6 py-3 rounded-lg transition-all duration-300 scale-95 hover:scale-100">
+                Book a Consultation
+            </button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section: Technical Mastery -->
+<section class="relative min-h-[716px] flex items-center py-20 hero-gradient overflow-hidden">
+
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center relative z-10">
+<div class="space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                        ENGINEERED FOR EXCELLENCE
+                    </div>
+<h1 class="font-display-lg text-display-lg text-brand-navy max-w-xl">
+                        Technical Mastery in Global <span class="text-executive-blue">Connected Planning.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        We don't just consult; we architect. Our elite team of Master Anaplanners and Pigment Certified Architects transform complex data into strategic kinetic energy.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<div class="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-outline-variant/30">
+<div class="w-12 h-12 bg-secondary-fixed rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-executive-blue" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-brand-navy">Master Anaplanners</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Top 1% Global Elite</div>
+</div>
+</div>
+<div class="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-outline-variant/30">
+<div class="w-12 h-12 bg-tertiary-fixed rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary" data-icon="terminal">terminal</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-brand-navy">Pigment Certified</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Next-Gen Modeling</div>
+</div>
+</div>
+</div>
+</div>
+<div class="relative hidden lg:block">
+<!-- Dashboard Visual Representation -->
+<div class="glass-panel rounded-2xl p-8 shadow-xl border border-white/50 relative">
+<div class="flex items-center justify-between mb-8">
+<div class="h-4 w-32 bg-outline-variant/40 rounded-full"></div>
+<div class="flex gap-2">
+<div class="w-3 h-3 rounded-full bg-error"></div>
+<div class="w-3 h-3 rounded-full bg-accent-teal"></div>
+<div class="w-3 h-3 rounded-full bg-executive-blue"></div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-6">
+<div class="h-24 rounded-lg bg-secondary-fixed/30 border border-secondary-fixed flex flex-col justify-end p-4">
+<div class="h-2 w-12 bg-executive-blue rounded-full mb-2"></div>
+<div class="h-8 w-full bg-executive-blue/20 rounded"></div>
+</div>
+<div class="h-24 rounded-lg bg-tertiary-fixed/30 border border-tertiary-fixed flex flex-col justify-end p-4">
+<div class="h-2 w-12 bg-tertiary rounded-full mb-2"></div>
+<div class="h-8 w-full bg-tertiary/20 rounded"></div>
+</div>
+</div>
+<div class="space-y-4">
+<div class="h-4 w-full bg-outline-variant/20 rounded-full overflow-hidden">
+<div class="h-full bg-accent-teal w-[75%]"></div>
+</div>
+<div class="h-4 w-full bg-outline-variant/20 rounded-full overflow-hidden">
+<div class="h-full bg-executive-blue w-[92%]"></div>
+</div>
+<div class="h-4 w-full bg-outline-variant/20 rounded-full overflow-hidden">
+<div class="h-full bg-vibrant-purple w-[60%]"></div>
+</div>
+</div>
+<!-- Floating KPI Badge -->
+<div class="absolute -bottom-6 -right-6 bg-brand-navy text-white p-6 rounded-2xl shadow-2xl">
+<div class="text-display-lg font-display-lg mb-1">99.8%</div>
+<div class="text-label-md font-label-md opacity-80">Implementation Success</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Certifications & Expertise Bento Grid -->
+<section class="py-24 bg-white">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="mb-16 text-center max-w-3xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-brand-navy mb-4">Deep Technical Specialization</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Our pedigree is built on complex problem-solving. We leverage the world's most advanced planning technologies to create scalable, enterprise-wide ecosystems.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Master Anaplanner Card -->
+<div class="md:col-span-8 glass-panel rounded-xl p-8 border border-outline-variant/30 flex flex-col md:flex-row gap-8 items-center overflow-hidden">
+<div class="flex-1 space-y-4">
+<span class="font-label-sm text-label-sm text-executive-blue uppercase tracking-widest font-bold">PLATFORM LEADER</span>
+<h3 class="font-headline-md text-headline-md text-brand-navy">Anaplan Master Architects</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                We house one of the largest concentrations of Master Anaplanners globally. From multi-model orchestration to complex scripting, we handle the infrastructure that powers Fortune 500 decisions.
+                            </p>
+<ul class="space-y-2">
+<li class="flex items-center gap-2 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-accent-teal" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                    ALM Implementation Specialists
+                                </li>
+<li class="flex items-center gap-2 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-accent-teal" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                    Hyper-scale Data Integration
+                                </li>
+</ul>
+</div>
+<div class="w-full md:w-1/3 aspect-square rounded-xl relative overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A clean, high-resolution close-up of a high-end laptop displaying complex financial modeling software with blue and purple data visualizations. The lighting is bright and professional, highlighting the crisp UI elements of the software. The aesthetic is corporate and modern, mirroring the executive blue and brand navy palette of a premium consulting firm." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO6agP51M595V5-Leo22fpyhU0wkUGk8bDldtq3kC2v-biScB5AC7y6dAm87yB5uHKsQ1bzh9ldNb9asEZJ6HWxMDAm9IVT-NXV4QhHfpjV60lX2lbTmkD26rr8Y81WVJvDG4U-bCnPCbVFE6UVOrTX5wWB-n4un47Z1SeN6CKFbwa8ZU1NQXqIE17V6NDsSppH81pHkOZIQV8At1vhPPh1A_FjpYef-wAydxBpOnz15pe_wGSfC20ZZhQp-IEbYSGcsfWConnpgQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-brand-navy/60 to-transparent"></div>
+</div>
+</div>
+<!-- Pigment Card -->
+<div class="md:col-span-4 bg-brand-navy rounded-xl p-8 text-white relative overflow-hidden group">
+
+<div class="relative z-10 h-full flex flex-col justify-between">
+<div class="space-y-4">
+<span class="font-label-sm text-label-sm text-accent-teal uppercase tracking-widest font-bold">NEXT-GEN ECOSYSTEM</span>
+<h3 class="font-headline-md text-headline-md">Pigment Certified</h3>
+<p class="font-body-md text-body-md text-white/80">
+                                    Leveraging the flexibility and power of Pigment for modern, agile growth modeling.
+                                </p>
+</div>
+<div class="pt-8">
+<button class="flex items-center gap-2 font-label-md text-label-md text-white hover:text-accent-teal transition-colors">
+                                    View Capabilities <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Tech Stack Cards -->
+<div class="md:col-span-4 glass-panel rounded-xl p-8 border border-outline-variant/30 space-y-4 kinetic-border">
+<div class="w-12 h-12 bg-secondary-container text-white rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="database">database</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-brand-navy">Data Engineering</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Complex ETL pipelines, Snowflake integrations, and real-time data streaming architectures.</p>
+</div>
+<div class="md:col-span-4 glass-panel rounded-xl p-8 border border-outline-variant/30 space-y-4 kinetic-border">
+<div class="w-12 h-12 bg-vibrant-purple text-white rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-brand-navy">Predictive AI</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Embedding machine learning models directly into planning workflows for intelligent forecasting.</p>
+</div>
+<div class="md:col-span-4 glass-panel rounded-xl p-8 border border-outline-variant/30 space-y-4 kinetic-border">
+<div class="w-12 h-12 bg-accent-teal text-brand-navy rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="security">security</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-brand-navy">Enterprise Security</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Rigorous SOC2 compliance and multi-tenant security protocols for sensitive financial data.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Global Reach, Regional Expertise Map Section -->
+<section class="py-24 bg-surface-container relative overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+<div class="space-y-8 order-2 lg:order-1">
+<h2 class="font-headline-lg text-headline-lg text-brand-navy">Global Reach,<br/>Regional Expertise.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Our distributed network of technical centers allows us to provide follow-the-sun support while maintaining deep local knowledge of regulatory landscapes.
+                    </p>
+<div class="grid grid-cols-2 gap-8">
+<div class="space-y-2">
+<div class="text-display-lg font-display-lg text-executive-blue">15+</div>
+<div class="font-label-md text-label-md text-brand-navy uppercase tracking-wider">Global Hubs</div>
+</div>
+<div class="space-y-2">
+<div class="text-display-lg font-display-lg text-executive-blue">24/7</div>
+<div class="font-label-md text-label-md text-brand-navy uppercase tracking-wider">Managed Services</div>
+</div>
+<div class="space-y-2">
+<div class="text-display-lg font-display-lg text-executive-blue">400+</div>
+<div class="font-label-md text-label-md text-brand-navy uppercase tracking-wider">Certified Experts</div>
+</div>
+<div class="space-y-2">
+<div class="text-display-lg font-display-lg text-executive-blue">45</div>
+<div class="font-label-md text-label-md text-brand-navy uppercase tracking-wider">Countries Served</div>
+</div>
+</div>
+</div>
+<div class="relative order-1 lg:order-2 h-[400px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
+<div class="w-full h-full bg-cover bg-center" data-alt="A sophisticated digital map of the world presented in a minimalist, high-contrast dark navy and executive blue style. Small, glowing nodes are placed on major global cities like London, New York, Singapore, and Sydney, with subtle animated lines of light connecting them to represent a global network. The style is data-driven and professional, suggesting global connectivity and technological expertise." data-location="Global" style="background-image: url('https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg')"></div>
+<!-- Floating Location Tag Example -->
+<div class="absolute top-1/4 left-1/4 animate-bounce">
+<div class="bg-white/90 backdrop-blur-sm p-3 rounded-lg shadow-lg border border-outline-variant/30 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-accent-teal"></span>
+<span class="font-label-md text-label-md text-brand-navy">New York HQ</span>
+</div>
+</div>
+<div class="absolute bottom-1/3 right-1/3">
+<div class="bg-white/90 backdrop-blur-sm p-3 rounded-lg shadow-lg border border-outline-variant/30 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-executive-blue"></span>
+<span class="font-label-md text-label-md text-brand-navy">London Tech Hub</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 max-w-container-max mx-auto px-margin-desktop">
+<div class="bg-brand-navy rounded-[2.5rem] p-12 md:p-24 text-center text-white relative overflow-hidden">
+
+<div class="relative z-10 max-w-2xl mx-auto space-y-8">
+<h2 class="font-display-lg text-display-lg">Ready to engineer your future?</h2>
+<p class="font-body-lg text-body-lg text-white/80">
+                        Schedule a technical deep-dive with our Master Anaplanners to discuss your architectural challenges.
+                    </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="bg-accent-teal text-brand-navy hover:bg-white font-label-md text-label-md px-10 py-5 rounded-full transition-all duration-300 font-bold">
+                            Book Technical Consultation
+                        </button>
+<button class="border border-white/30 hover:bg-white/10 text-white font-label-md text-label-md px-10 py-5 rounded-full transition-all duration-300">
+                            View Tech Stack
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-brand-navy w-full pt-16 pb-8">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="col-span-1 md:col-span-1 space-y-6">
+<span class="font-headline-lg text-headline-lg font-bold text-white">ANP Consulting</span>
+<p class="font-body-md text-body-md text-on-primary-container/80 max-w-xs">
+                    Architecting the future of enterprise planning with technical precision and strategic vision.
+                </p>
+</div>
+<div class="space-y-4">
+<h5 class="text-white font-bold font-label-md text-label-md">Services</h5>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-primary-container/80 hover:text-accent-teal transition-colors" href="#">Strategic Planning</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-container/80 hover:text-accent-teal transition-colors" href="#">Financial Forecasting</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-container/80 hover:text-accent-teal transition-colors" href="#">Operational Excellence</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="text-white font-bold font-label-md text-label-md">Industries</h5>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-primary-container/80 hover:text-accent-teal transition-colors" href="#">Manufacturing</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-container/80 hover:text-accent-teal transition-colors" href="#">Financial Services</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-container/80 hover:text-accent-teal transition-colors" href="#">Technology</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="text-white font-bold font-label-md text-label-md">Company</h5>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-primary-container/80 hover:text-accent-teal transition-colors" href="#">Our Story</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-container/80 hover:text-accent-teal transition-colors" href="#">Leadership</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-container/80 hover:text-accent-teal transition-colors" href="#">News</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="font-body-md text-body-md text-on-primary-container/80">© 2024 ANP Consulting. All rights reserved.</span>
+<div class="flex gap-8">
+<a class="font-body-md text-body-md text-on-primary-container/80 hover:text-accent-teal transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-primary-container/80 hover:text-accent-teal transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-primary-container/80 hover:text-accent-teal transition-colors" href="#">Cookie Policy</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple intersection observer for reveal animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body></html>
